@@ -8,7 +8,7 @@ use WolfDen133\ServerSettings\ServerSettings;
 
 class Main extends PluginBase {
 
-    public function onEnable(): void {
+   public function onEnable(): void{
         $this->getLogger()->notice("Plugin wurde aktiviert!");
 
         $api = $this->getServer()->getPluginManager()->getPlugin("ServerSettings");
@@ -30,10 +30,11 @@ class Main extends PluginBase {
 
         $api->getServerSettings()->setCallable(function (Player $player, array $data = null): void {
             if ($data === null) return;
-           
+
         });
     }
 
-    public function onDisable(): void {
+    public function onDisable(): void{
         $this->getLogger()->notice("Plugin wurde deaktiviert!");
     }
+}
