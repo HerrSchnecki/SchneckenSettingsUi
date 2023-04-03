@@ -1,0 +1,5 @@
+name: ServerSettings
+version: 1.0.0
+api: 4.0.0
+author: Herrschnecki
+main: Herrschnecki\Main
