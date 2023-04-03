@@ -38,4 +38,3 @@ class Main extends PluginBase {
     public function onDisable(): void {
         $this->getLogger()->notice("Plugin wurde deaktiviert!");
     }
-}
